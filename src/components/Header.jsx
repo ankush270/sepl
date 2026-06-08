@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bell, User, Menu, X, ChevronDown } from 'lucide-react';
 
@@ -68,7 +68,7 @@ export default function Header() {
           </nav>
 
           {/* Action Icons & CTAs */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             {/* Notification Bell */}
             <button className="relative p-2.5 rounded-full text-slate-600 hover:text-primary hover:bg-slate-100 transition-all duration-200" aria-label="Notifications">
               <Bell className="w-5.5 h-5.5" />
@@ -91,7 +91,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Hamburger Button */}
-          <div className="flex md:hidden items-center gap-3">
+          <div className="flex lg:hidden items-center gap-3">
             <button className="relative p-2 rounded-full text-slate-600 hover:text-primary hover:bg-slate-100" aria-label="Notifications">
               <Bell className="w-5 h-5" />
               <span className="absolute top-1 right-1 w-1.5 h-1.5 bg-rose-500 rounded-full" />
@@ -111,7 +111,7 @@ export default function Header() {
 
       {/* Mobile Navigation Drawer */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glassmorphism border-b border-slate-200 animate-in slide-in-from-top duration-300">
+        <div className="lg:hidden glassmorphism border-b border-slate-200 animate-in slide-in-from-top duration-300">
           <div className="px-4 pt-2 pb-6 space-y-1.5">
             {navLinks.map((link) => (
               <Link

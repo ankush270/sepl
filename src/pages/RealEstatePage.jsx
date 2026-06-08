@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Building2, Home, MapPin, Key, ShieldCheck, Mail, CheckCircle2, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
+import { Home, MapPin, Key, ShieldCheck, CheckCircle2, ChevronRight } from 'lucide-react';
 
 export default function RealEstatePage() {
   const [formData, setFormData] = useState({ name: '', phone: '', property: 'Sapthagiri Premium Apartments', budget: '₹50 Lakhs - ₹1 Crore' });
@@ -74,7 +74,7 @@ export default function RealEstatePage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {properties.map((prop, i) => (
             <div key={i} className="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
               <div>

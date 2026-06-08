@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Code, Gem, ShieldCheck, Briefcase, Star, ArrowRight, Laptop, Award, CheckCircle2 } from 'lucide-react';
+import { useState } from 'react';
+import { Code, Gem, ShieldCheck, Briefcase, Laptop, Award, CheckCircle2 } from 'lucide-react';
 
 export default function BusinessPage() {
   const [formData, setFormData] = useState({ name: '', company: '', query: 'Enterprise Software' });

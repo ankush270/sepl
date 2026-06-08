@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-accent/30 selection:text-primary flex flex-col justify-between">
+      <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-accent/30 selection:text-primary flex flex-col justify-between overflow-x-hidden">
         <Header />
         
         {/* Dynamic page container */}

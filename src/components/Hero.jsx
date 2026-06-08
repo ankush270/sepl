@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { HeartPulse, GraduationCap, Building2, Palmtree, ArrowRight, Grid, Users, Headphones, Globe } from 'lucide-react';
 import heroBg from '../assets/hero-bg.png';
 
@@ -84,7 +84,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Floating micro-modules overlaying the collage background */}
-          <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end min-h-[300px] lg:min-h-[450px] z-10">
+          <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end min-h-[300px] lg:min-h-[450px] pb-12 lg:pb-0 z-10">
             
             {/* Floating Card 1: Healthcare Plus */}
             <div className="absolute top-[10%] left-[-2%] sm:left-[10%] lg:left-[-12%] w-[240px] glassmorphism border border-white/60 p-4 rounded-2xl shadow-xl flex gap-3.5 items-start animate-float-slow hover:pause cursor-default transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-l-4 border-l-cyan-400">
@@ -118,7 +118,7 @@ export default function Hero() {
 
         {/* Stats Banner Card */}
         <div className="mt-20 lg:mt-24 bg-white/90 border border-slate-100 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/50 backdrop-blur-md relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 divide-y-0 lg:divide-x lg:divide-slate-100">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 divide-y-0 lg:divide-x lg:divide-slate-100">
             
             {/* Stat 1 */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left px-2">

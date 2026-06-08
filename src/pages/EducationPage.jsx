@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   GraduationCap, Baby, Music, Calendar, MapPin, 
-  CheckCircle2, Trophy, BookOpen, Star, Clock, 
-  Bell, Award, School, Users, ClipboardList
+  CheckCircle2, Trophy, Clock, 
+  Bell, School, ClipboardList
 } from 'lucide-react';
 
 export default function EducationPage() {
@@ -117,7 +117,7 @@ export default function EducationPage() {
         </div>
 
         {/* Right Side: Core Thematic Curricula (IIT, Montessori, Music) */}
-        <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {/* Montessori */}
           <div className="bg-white border border-slate-100 p-6 rounded-[28px] shadow-sm flex flex-col justify-between items-start border-t-4 border-t-rose-500 hover:shadow-md transition-shadow">
             <div className="space-y-4">
@@ -171,20 +171,27 @@ export default function EducationPage() {
         <h2 className="text-3xl font-extrabold text-primary mb-4 font-serif">Daily Academic Schedule</h2>
         <p className="text-slate-500 font-semibold mb-12">Batch timings configured across all locations and age brackets.</p>
         <div className="bg-white border border-slate-100 rounded-3xl shadow-sm overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-4 bg-slate-900 text-white font-extrabold text-xs uppercase tracking-widest py-4 px-6 gap-4 text-center md:text-left">
+          <div className="hidden md:grid grid-cols-4 bg-slate-900 text-white font-extrabold text-xs uppercase tracking-widest py-4 px-6 gap-4 text-left">
             <div>Batch Timings</div>
             <div className="md:col-span-2">Program Class Name</div>
             <div>Target Age / Grade</div>
           </div>
           <div className="divide-y divide-slate-100">
             {batches.map((b, i) => (
-              <div key={i} className="grid grid-cols-1 md:grid-cols-4 font-bold py-5 px-6 gap-4 items-center text-center md:text-left hover:bg-slate-50 transition-colors">
-                <div className="text-indigo-600 flex items-center justify-center md:justify-start gap-2 text-sm">
-                  <Clock className="w-4 h-4 text-slate-400" />
+              <div key={i} className="grid grid-cols-1 md:grid-cols-4 font-bold py-5 px-6 gap-4 items-start md:items-center text-left hover:bg-slate-50 transition-colors">
+                <div className="text-indigo-600 flex items-center justify-start gap-2 text-sm">
+                  <Clock className="w-4 h-4 text-slate-400 flex-shrink-0" />
+                  <span className="md:hidden text-slate-400 font-extrabold text-xs uppercase mr-1.5 flex-shrink-0">Timings:</span>
                   {b.time}
                 </div>
-                <div className="md:col-span-2 text-primary text-[15px]">{b.name}</div>
-                <div className="text-slate-500 text-xs uppercase tracking-wider">{b.age}</div>
+                <div className="md:col-span-2 text-primary text-[15px] flex items-center justify-start gap-2">
+                  <span className="md:hidden text-slate-400 font-extrabold text-xs uppercase mr-1.5 flex-shrink-0">Program:</span>
+                  {b.name}
+                </div>
+                <div className="text-slate-500 text-xs uppercase tracking-wider flex items-center justify-start gap-2">
+                  <span className="md:hidden text-slate-400 font-extrabold text-xs uppercase mr-1.5 flex-shrink-0">Age/Grade:</span>
+                  {b.age}
+                </div>
               </div>
             ))}
           </div>
@@ -198,7 +205,7 @@ export default function EducationPage() {
           <h2 className="text-3xl font-extrabold text-primary font-serif">Academy Toppers</h2>
           <p className="text-slate-500 font-semibold">Honoring the exceptional achievements of our students in national examinations.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {toppers.map((t, i) => (
             <div key={i} className="bg-white p-6 rounded-2xl border border-slate-100 text-center shadow-sm relative group hover:-translate-y-1 transition-all duration-300">
               <img src={t.image} alt={t.name} className="w-20 h-20 rounded-full object-cover mx-auto border-2 border-white shadow-md mb-4 group-hover:scale-105 transition-transform" />
@@ -214,7 +221,7 @@ export default function EducationPage() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 mb-24">
         <h2 className="text-3xl font-extrabold text-primary mb-4 font-serif">Curated Learning Tracks</h2>
         <p className="text-slate-500 font-semibold mb-12">Adhering to certified benchmarks and national exams frameworks.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((pkg, i) => (
             <div key={i} className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow relative">
               <span className="absolute top-6 right-8 text-slate-100 font-extrabold text-6xl select-none pointer-events-none">0{i+1}</span>
