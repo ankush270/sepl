@@ -31,7 +31,7 @@ export default function LifestylePage() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/10 text-sm font-bold tracking-wider uppercase">
               Lifestyle & Essential Division
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-serif leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               Lifestyle & Essentials
             </h1>
             <p className="text-base sm:text-lg text-emerald-100 font-semibold leading-relaxed max-w-xl">
@@ -100,7 +100,7 @@ export default function LifestylePage() {
         <div className="bg-white border border-slate-100 shadow-xl rounded-[32px] p-8 sm:p-12 lg:p-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           <div className="space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary font-serif">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary">
               Inquire Now
             </h2>
             <p className="text-slate-500 font-semibold leading-relaxed">

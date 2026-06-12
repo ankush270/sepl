@@ -40,14 +40,14 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-primary leading-[1.15]">
-              <span className="font-serif block">A Universe of Services</span>
-              <span className="font-serif text-accent block mt-1 bg-gradient-to-r from-accent via-amber-500 to-accent bg-clip-text text-transparent">
+              <span className="block">A Universe of Services</span>
+              <span className="text-accent block mt-1">
                 Under One Brand
               </span>
             </h1>
 
             {/* Description */}
-            <p className="text-base sm:text-lg text-slate-600 max-w-xl font-semibold leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed">
               SEPL.CO integrates healthcare, education, and lifestyle solutions into a seamless, modern ecosystem. Experience premium efficiency tailored to your professional and personal growth.
             </p>
 
@@ -84,7 +84,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Floating micro-modules overlaying the collage background */}
-          <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end min-h-[300px] lg:min-h-[450px] z-10">
+          <div className="hidden lg:flex lg:col-span-5 relative items-center justify-end lg:min-h-[450px] z-10">
             
             {/* Floating Card 1: Healthcare Plus */}
             <div className="absolute top-[10%] left-[-2%] sm:left-[10%] lg:left-[-12%] w-[240px] glassmorphism border border-white/60 p-4 rounded-2xl shadow-xl flex gap-3.5 items-start animate-float-slow hover:pause cursor-default transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-l-4 border-l-cyan-400">
@@ -117,55 +117,51 @@ export default function Hero() {
         </div>
 
         {/* Stats Banner Card */}
-        <div className="mt-20 lg:mt-24 bg-white/90 border border-slate-100 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/50 backdrop-blur-md relative z-10">
+        {/* <div className="mt-20 lg:mt-24 bg-white/90 border border-slate-100 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/50 backdrop-blur-md relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 divide-y-0 lg:divide-x lg:divide-slate-100">
             
-            {/* Stat 1 */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left px-2">
               <div className="p-3 bg-indigo-50 text-indigo-600 rounded-2xl flex-shrink-0">
                 <Grid className="w-6 h-6" />
               </div>
               <div>
                 <div className="text-3xl font-extrabold text-primary">10+</div>
-                <div className="text-[12px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Services</div>
+                <div className="text-[12px] font-bold text-slate-400  tracking-widest mt-0.5">Services</div>
               </div>
             </div>
 
-            {/* Stat 2 */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left px-2">
               <div className="p-3 bg-emerald-50 text-emerald-600 rounded-2xl flex-shrink-0">
                 <Users className="w-6 h-6" />
               </div>
               <div>
                 <div className="text-3xl font-extrabold text-primary">1000+</div>
-                <div className="text-[12px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Customers</div>
+                <div className="text-[12px] font-bold text-slate-400  tracking-widest mt-0.5">Customers</div>
               </div>
             </div>
 
-            {/* Stat 3 */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left px-2">
               <div className="p-3 bg-cyan-50 text-cyan-600 rounded-2xl flex-shrink-0">
                 <Headphones className="w-6 h-6" />
               </div>
               <div>
                 <div className="text-3xl font-extrabold text-primary">24/7</div>
-                <div className="text-[12px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Expert Support</div>
+                <div className="text-[12px] font-bold text-slate-400  tracking-widest mt-0.5">Expert Support</div>
               </div>
             </div>
 
-            {/* Stat 4 */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left px-2">
               <div className="p-3 bg-amber-50 text-amber-600 rounded-2xl flex-shrink-0">
                 <Globe className="w-6 h-6" />
               </div>
               <div>
                 <div className="text-3xl font-extrabold text-primary">15+</div>
-                <div className="text-[12px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Countries</div>
+                <div className="text-[12px] font-bold text-slate-400  tracking-widest mt-0.5">Countries</div>
               </div>
             </div>
 
           </div>
-        </div>
+        </div> */}
 
       </div>
     </section>

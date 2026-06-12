@@ -54,7 +54,7 @@ export default function Testimonials() {
               Global Trust
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">
-              Trusted by <span className="font-serif italic text-accent font-medium">Thousands</span>
+              Trusted by <span className="text-accent font-extrabold">Thousands</span>
             </h2>
             <p className="text-base text-slate-500 font-semibold leading-relaxed">
               Hear from the leaders and clients who believe in our ecosystem.

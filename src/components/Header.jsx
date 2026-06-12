@@ -7,13 +7,12 @@ export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const navLinks = [
-    { name: 'Healthcare', path: '/healthcare', hasDropdown: true },
-    { name: 'Education', path: '/education', hasDropdown: true },
-    { name: 'Business', path: '/business', hasDropdown: true },
-    { name: 'Lifestyle', path: '/lifestyle', hasDropdown: true },
-    { name: 'Real Estate', path: '/realestate' },
+    { name: 'Healthcare', path: '/services#healthcare'},
+    { name: 'Education', path: '/services#education'},
+    { name: 'Business', path: '/services#business'},
+    { name: 'Lifestyle', path: '/services#lifestyle'},
+    { name: 'Real Estate', path: '/services#realestate'},
     { name: 'About Us', path: '/about' },
-    { name: 'Contact', path: '/contact' },
   ];
 
   return (
@@ -69,33 +68,19 @@ export default function Header() {
 
           {/* Action Icons & CTAs */}
           <div className="hidden md:flex items-center gap-4">
-            {/* Notification Bell */}
-            <button className="relative p-2.5 rounded-full text-slate-600 hover:text-primary hover:bg-slate-100 transition-all duration-200" aria-label="Notifications">
-              <Bell className="w-5.5 h-5.5" />
-              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full animate-ping" />
-              <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full" />
-            </button>
-
-            {/* Profile Avatar */}
-            <button className="p-2.5 rounded-full text-slate-600 hover:text-primary hover:bg-slate-100 transition-all duration-200" aria-label="Profile">
-              <User className="w-5.5 h-5.5" />
-            </button>
 
             {/* Get Started Button */}
             <Link
               to="/contact"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full text-[15px] font-semibold text-white bg-primary hover:bg-primary-light hover:shadow-lg hover:shadow-primary/20 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
             >
-              Get Started
+              Get in Touch
             </Link>
           </div>
 
           {/* Mobile Hamburger Button */}
           <div className="flex md:hidden items-center gap-3">
-            <button className="relative p-2 rounded-full text-slate-600 hover:text-primary hover:bg-slate-100" aria-label="Notifications">
-              <Bell className="w-5 h-5" />
-              <span className="absolute top-1 right-1 w-1.5 h-1.5 bg-rose-500 rounded-full" />
-            </button>
+
             
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -124,18 +109,12 @@ export default function Header() {
               </Link>
             ))}
             <div className="pt-4 border-t border-slate-200/60 flex items-center justify-between px-4">
-              <div className="flex items-center gap-4">
-                <button className="p-2.5 rounded-full bg-slate-100 text-slate-700">
-                  <User className="w-5.5 h-5.5" />
-                </button>
-                <span className="text-sm font-medium text-slate-600">My Account</span>
-              </div>
               <Link
                 to="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-bold text-white bg-primary hover:bg-primary-light"
               >
-                Get Started
+                Get in Touch
               </Link>
             </div>
           </div>

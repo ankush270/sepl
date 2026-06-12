@@ -75,14 +75,9 @@ export default function Footer() {
                 to="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-primary bg-white hover:bg-slate-50 hover:shadow-lg hover:shadow-white/10 active:translate-y-0.5 transition-all duration-200"
               >
-                Contact Sales
+                Contact Us
               </Link>
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-white border border-white/30 hover:bg-white/5 active:translate-y-0.5 transition-all duration-200"
-              >
-                Request Demo
-              </Link>
+
             </div>
           </div>
         </div>
@@ -134,72 +129,33 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Healthcare Links */}
-          <div className="lg:col-span-2 space-y-4">
+          {/* Column 2: Services Directory */}
+          <div className="lg:col-span-4 space-y-4">
             <h4 className="font-extrabold text-[13.5px] text-white uppercase tracking-widest border-l-2 border-accent pl-2.5">
-              Healthcare
+              Services
             </h4>
             <ul className="space-y-3 text-sm font-semibold">
-              <li><Link to="/healthcare" className="hover:text-white transition-colors">Clinic & Diagnostics</Link></li>
-              <li><Link to="/healthcare" className="hover:text-white transition-colors">Pharmacy Store</Link></li>
-              <li><Link to="/healthcare" className="hover:text-white transition-colors">Healthcare Services</Link></li>
-              <li><Link to="/healthcare" className="hover:text-white transition-colors">Diagnostics Lab</Link></li>
+              <li><Link to="/services#healthcare" className="hover:text-white transition-colors">Healthcare & Diagnostics</Link></li>
+              <li><Link to="/services#education" className="hover:text-white transition-colors">Progressive Education</Link></li>
+              <li><Link to="/services#business" className="hover:text-white transition-colors">Business & Logistics</Link></li>
+              <li><Link to="/services#lifestyle" className="hover:text-white transition-colors">Lifestyle & Hospitality</Link></li>
+              <li><Link to="/services#realestate" className="hover:text-white transition-colors">Real Estate & Properties</Link></li>
             </ul>
           </div>
-
-          {/* Column 3: Education Links */}
-          <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-extrabold text-[13.5px] text-white uppercase tracking-widest border-l-2 border-accent pl-2.5">
-              Education
-            </h4>
-            <ul className="space-y-3 text-sm font-semibold">
-              <li><Link to="/education" className="hover:text-white transition-colors">Academy Classes</Link></li>
-              <li><Link to="/education" className="hover:text-white transition-colors">IIT JEE / NEET</Link></li>
-              <li><Link to="/education" className="hover:text-white transition-colors">Music Classes</Link></li>
-              <li><Link to="/education" className="hover:text-white transition-colors">Preschool & School</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 4: Company Links */}
-          <div className="lg:col-span-2 space-y-4">
+ 
+          {/* Column 3: Company Links */}
+          <div className="lg:col-span-4 space-y-4">
             <h4 className="font-extrabold text-[13.5px] text-white uppercase tracking-widest border-l-2 border-accent pl-2.5">
               Company
             </h4>
             <ul className="space-y-3 text-sm font-semibold">
               <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">Our Founder</Link></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">Careers</Link></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">Partners</Link></li>
+              <li><Link to="/about#founder" className="hover:text-white transition-colors">Our Founder</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
-          {/* Column 5: Newsletter Sign up */}
-          <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-extrabold text-[13.5px] text-white uppercase tracking-widest border-l-2 border-accent pl-2.5">
-              Newsletter
-            </h4>
-            <p className="text-sm font-semibold text-slate-400 leading-relaxed">
-              Stay updated with our latest news and services.
-            </p>
-            <form onSubmit={handleSubmit} className="relative mt-2">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                className="w-full bg-slate-900 border border-slate-800 rounded-xl py-3 px-4 pr-12 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-slate-700 transition-all font-semibold"
-              />
-              <button
-                type="submit"
-                className="absolute right-1.5 top-1.5 p-2 bg-accent hover:bg-accent-light text-primary rounded-lg transition-colors active:scale-95"
-                aria-label="Submit email subscription"
-              >
-                <Send className="w-3.5 h-3.5" />
-              </button>
-            </form>
-          </div>
+
 
         </div>
       </div>

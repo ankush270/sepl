@@ -12,7 +12,7 @@ export default function Contact() {
     },
     {
       id: 2,
-      title: 'Phone Number',
+      title: 'Phone',
       value: '+91 95381 07758',
       link: 'tel:+919538107758',
       icon: Phone,
@@ -20,7 +20,7 @@ export default function Contact() {
     },
     {
       id: 3,
-      title: 'Email Address',
+      title: 'Email',
       value: 'akshath_surathkal@yahoo.com',
       link: 'mailto:akshath_surathkal@yahoo.com',
       icon: Mail,
@@ -42,7 +42,7 @@ export default function Contact() {
             Contact Us
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">
-            Get In Touch With <span className="font-serif italic text-accent font-medium">SEPL.CO</span>
+            Get In Touch With <span className="text-accent font-extrabold">SEPL.CO</span>
           </h2>
           <p className="text-base text-slate-500 font-semibold leading-relaxed">
             We'd love to hear from you. Reach out to explore how we can work together.
@@ -63,18 +63,18 @@ export default function Contact() {
                     <item.icon className="w-5.5 h-5.5" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-[14.5px] text-slate-400 uppercase tracking-wider mb-1.5">
+                    <h4 className="font-extrabold text-[14.5px] text-slate-400 tracking-wider mb-1.5">
                       {item.title}
                     </h4>
                     {item.link ? (
                       <a
                         href={item.link}
-                        className="text-base sm:text-lg font-bold text-primary hover:text-accent transition-colors block"
+                        className="sm:text-sm text-primary hover:text-accent transition-colors block"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <p className="text-base sm:text-lg font-bold text-primary leading-snug">
+                      <p className="sm:text-sm text-primary leading-snug">
                         {item.value}
                       </p>
                     )}

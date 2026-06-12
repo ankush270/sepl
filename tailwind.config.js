@@ -20,8 +20,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Outfit', 'Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['Source Serif 4', 'Georgia', 'serif'],
       },
       animation: {
         'float-slow': 'float 6s ease-in-out infinite',

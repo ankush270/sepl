@@ -3,21 +3,28 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import HealthcarePage from './pages/HealthcarePage';
-import EducationPage from './pages/EducationPage';
-import BusinessPage from './pages/BusinessPage';
-import LifestylePage from './pages/LifestylePage';
-import RealEstatePage from './pages/RealEstatePage';
+import ServicesPage from './pages/ServicesPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
-// Helper component to auto-scroll window to top on page route changes
+// Helper component to auto-scroll window to top on page route changes,
+// with support for hash-based anchor scrolling
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [pathname]);
+    if (hash) {
+      // Wait for page to render, then scroll to the anchor element
+      setTimeout(() => {
+        const el = document.getElementById(hash.replace('#', ''));
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 80);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }, [pathname, hash]);
 
   return null;
 }
@@ -33,11 +40,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/healthcare" element={<HealthcarePage />} />
-            <Route path="/education" element={<EducationPage />} />
-            <Route path="/business" element={<BusinessPage />} />
-            <Route path="/lifestyle" element={<LifestylePage />} />
-            <Route path="/realestate" element={<RealEstatePage />} />
+            <Route path="/services" element={<ServicesPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
@@ -50,3 +53,4 @@ function App() {
 }
 
 export default App;
+

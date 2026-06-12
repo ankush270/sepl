@@ -62,7 +62,7 @@ export default function HealthcarePage() {
                 <HeartPulse className="w-4 h-4 text-accent" />
                 SEPL Healthcare Division
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-serif leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
                 Compassionate Care.<br />Accurate Diagnostics.
               </h1>
               <p className="text-base sm:text-lg text-cyan-100 font-semibold leading-relaxed max-w-xl">
@@ -95,7 +95,7 @@ export default function HealthcarePage() {
 
       {/* Roster / Department Timings */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 mb-24">
-        <h2 className="text-3xl font-extrabold text-primary mb-4 font-serif">Clinical Departments & Timings</h2>
+        <h2 className="text-3xl font-extrabold text-primary mb-4">Clinical Departments & Timings</h2>
         <p className="text-slate-500 font-semibold mb-12">Consult with certified general practitioners and senior medical specialists daily.</p>
         <div className="bg-white border border-slate-100 rounded-3xl shadow-sm overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-4 bg-slate-900 text-white font-extrabold text-xs uppercase tracking-widest py-4 px-6 gap-4 text-center md:text-left">
@@ -191,7 +191,7 @@ export default function HealthcarePage() {
 
       {/* Diagnostic Health Packages */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 mb-24">
-        <h2 className="text-3xl font-extrabold text-primary mb-4 font-serif">Preventive Diagnostics Packages</h2>
+        <h2 className="text-3xl font-extrabold text-primary mb-4">Preventive Diagnostics Packages</h2>
         <p className="text-slate-500 font-semibold mb-12">Fully NABL and ISO compliant clinical health profiles.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {labPackages.map((pkg, i) => (
@@ -223,7 +223,7 @@ export default function HealthcarePage() {
           
           <div className="space-y-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-cyan-50 text-cyan-600 text-xs font-bold uppercase tracking-wider">Clinical Bookings</div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary leading-tight">
               Request Clinical Appointment
             </h2>
             <p className="text-slate-500 font-semibold leading-relaxed">

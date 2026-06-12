@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Founder() {
   return (
-    <section id="founder" className="py-24 bg-white relative">
+    <section id="founder" className="py-24 bg-white relative overflow-hidden">
       
       {/* Decorative background details */}
       <div className="absolute top-1/3 left-[-10%] w-[500px] h-[500px] bg-gradient-to-tr from-accent/5 to-transparent rounded-full blur-3xl pointer-events-none" />
@@ -50,13 +50,13 @@ export default function Founder() {
 
             {/* Title */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight leading-tight">
-              Our <span className="font-serif italic text-accent font-medium">Founder</span>
+              Our <span className="text-accent font-extrabold">Founder</span>
             </h2>
 
             {/* Biography details */}
-            <div className="space-y-4 text-base sm:text-[16.5px] text-slate-600 font-semibold leading-relaxed">
+            <div className="space-y-4 text-base sm:text-[16.5px] text-slate-600 leading-relaxed">
               <p>
-                A visionary healthcare professional and entrepreneur from Mangaluru, Dr. Akshath Ramesh Acharya founded SEPL.CO with a singular mission — to make quality healthcare, education, and essential services accessible to every community.
+                A visionary healthcare professional and entrepreneur from Mangaluru, Dr. Akshath Ramesh Acharya founded SEPL.CO with a singular mission - to make quality healthcare, education, and essential services accessible to every community.
               </p>
               <p>
                 With deep expertise in medicine and a passion for social impact, he has steered SEPL.CO from a single clinic into a diversified conglomerate spanning 10 verticals. Under his leadership, the organization has touched thousands of lives across Dakshina Kannada and beyond.
@@ -66,9 +66,9 @@ export default function Founder() {
             {/* Quote Blockout card */}
             <div className="relative border-l-4 border-accent bg-slate-50 rounded-r-3xl p-6 shadow-sm border-y border-r border-slate-100 mt-8">
               <p className="text-base sm:text-lg font-bold text-primary italic leading-relaxed">
-                "When we serve the community with integrity, growth follows naturally. Healthcare and education are not just businesses — they are responsibilities."
+                "When we serve the community with integrity, growth follows naturally. Healthcare and education are not just businesses, they are responsibilities."
               </p>
-              <div className="text-right mt-3 text-sm font-extrabold text-slate-400 uppercase tracking-widest">
+              <div className="text-right mt-3 text-sm font-extrabold text-slate-400 tracking-widest">
                 — Dr. Akshath Ramesh Acharya
               </div>
             </div>

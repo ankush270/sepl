@@ -21,95 +21,75 @@ export default function ServicesGrid() {
       title: 'Clinic & Diagnostics',
       desc: 'Advanced diagnostics and expert consultations for better health.',
       icon: HeartPulse,
-      color: 'text-cyan-600 bg-cyan-50 border-cyan-100/50',
-      arrowColor: 'text-cyan-600',
-      path: '/healthcare',
+      path: '/services#clinic-diagnostics',
     },
     {
       id: 2,
       title: 'Pharmacy',
       desc: 'Quality medicines with care, affordability and trust.',
       icon: Pill,
-      color: 'text-emerald-600 bg-emerald-50 border-emerald-100/50',
-      arrowColor: 'text-emerald-600',
-      path: '/healthcare',
+      path: '/services#pharmacy',
     },
     {
       id: 3,
       title: 'Healthcare Services',
       desc: 'Nursing, physiotherapy, ambulance & home care services.',
       icon: Stethoscope,
-      color: 'text-indigo-600 bg-indigo-50 border-indigo-100/50',
-      arrowColor: 'text-indigo-600',
-      path: '/healthcare',
+      path: '/services#healthcare-services',
     },
     {
       id: 4,
       title: 'Academy',
       desc: 'IIT JEE/NEET coaching, music classes & sports training.',
       icon: GraduationCap,
-      color: 'text-purple-600 bg-purple-50 border-purple-100/50',
-      arrowColor: 'text-purple-600',
-      path: '/education',
+      path: '/services#academy',
     },
     {
       id: 5,
       title: 'Preschool & School',
       desc: 'Holistic K-12 education rooted in values and excellence.',
       icon: Baby,
-      color: 'text-rose-600 bg-rose-50 border-rose-100/50',
-      arrowColor: 'text-rose-600',
-      path: '/education',
+      path: '/services#preschool-school',
     },
     {
       id: 6,
       title: 'Software',
       desc: 'Custom software & digital transformation for businesses.',
       icon: Code,
-      color: 'text-blue-600 bg-blue-50 border-blue-100/50',
-      arrowColor: 'text-blue-600',
-      path: '/business',
+      path: '/services#software',
     },
     {
       id: 7,
       title: 'Jewellery',
       desc: 'Elegant gold, diamond & silver collections for every occasion.',
       icon: Gem,
-      color: 'text-amber-600 bg-amber-50 border-amber-100/50',
-      arrowColor: 'text-amber-600',
-      path: '/business',
+      path: '/services#jewellery',
     },
     {
       id: 8,
       title: 'Travels',
       desc: 'Tours, tickets & visa assistance for smooth journeys.',
       icon: Plane,
-      color: 'text-orange-600 bg-orange-50 border-orange-100/50',
-      arrowColor: 'text-orange-600',
-      path: '/lifestyle',
+      path: '/services#travels',
     },
     {
       id: 9,
       title: 'Fuels',
       desc: 'Reliable fuel supply & bulk distribution for industries.',
       icon: Fuel,
-      color: 'text-green-600 bg-green-50 border-green-100/50',
-      arrowColor: 'text-green-600',
-      path: '/lifestyle',
+      path: '/services#fuels',
     },
     {
       id: 10,
       title: 'Music & Sports',
       desc: 'Nurturing talent and building champions for tomorrow.',
       icon: Music4,
-      color: 'text-sky-600 bg-sky-50 border-sky-100/50',
-      arrowColor: 'text-sky-600',
-      path: '/lifestyle',
+      path: '/services#music-sports',
     },
   ];
 
   return (
-    <section id="services" className="py-24 bg-white relative">
+    <section id="services" className="pt-24 bg-white relative">
       
       {/* Visual background details */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-slate-50/50 rounded-full blur-3xl pointer-events-none" />
@@ -123,7 +103,7 @@ export default function ServicesGrid() {
             Our Service Ecosystem
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">
-            Discover Our <span className="font-serif italic text-accent font-medium">10 Verticals</span>
+            Discover Our <span className="text-accent font-extrabold">10 Verticals</span>
           </h2>
           <p className="text-base text-slate-500 font-semibold leading-relaxed">
             Pillars of excellence delivering impact across every sphere of life.
@@ -139,12 +119,12 @@ export default function ServicesGrid() {
             >
               <div>
                 {/* Icon wrapper */}
-                <div className={`w-12 h-12 rounded-2xl flex items-center justify-center border ${v.color} mb-6 transition-all duration-300 group-hover:scale-105`}>
+                <div className="w-12 h-12 rounded-2xl flex items-center justify-center border border-accent/20 bg-accent/5 text-accent-dark mb-6 transition-all duration-300 group-hover:bg-accent group-hover:text-primary group-hover:border-accent group-hover:scale-105">
                   <v.icon className="w-6 h-6" />
                 </div>
 
                 {/* Vertical title */}
-                <h3 className="text-lg font-bold text-primary mb-2.5 leading-snug group-hover:text-primary-light transition-colors">
+                <h3 className="text-lg font-bold text-primary mb-2.5 leading-snug group-hover:text-accent-dark transition-colors">
                   {v.title}
                 </h3>
 
@@ -157,7 +137,7 @@ export default function ServicesGrid() {
               {/* Action Link to Route */}
               <Link
                 to={v.path}
-                className={`inline-flex items-center gap-1.5 text-xs font-bold ${v.arrowColor} uppercase tracking-wider group-hover:gap-2.5 transition-all duration-300`}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-accent-dark group-hover:text-accent-dark/85 uppercase tracking-wider group-hover:gap-2.5 transition-all duration-300"
               >
                 Learn more
                 <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-0.5 transition-transform" />

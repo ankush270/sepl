@@ -58,7 +58,7 @@ export default function EducationPage() {
                 <School className="w-4 h-4 text-accent" />
                 EduSphere Academy
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-serif leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
                 Nurturing Minds,<br />Building Futures.
               </h1>
               <p className="text-base sm:text-lg text-purple-100 font-semibold leading-relaxed max-w-xl">
@@ -168,7 +168,7 @@ export default function EducationPage() {
 
       {/* Timetable / Batch Schedules */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 mb-24">
-        <h2 className="text-3xl font-extrabold text-primary mb-4 font-serif">Daily Academic Schedule</h2>
+        <h2 className="text-3xl font-extrabold text-primary mb-4">Daily Academic Schedule</h2>
         <p className="text-slate-500 font-semibold mb-12">Batch timings configured across all locations and age brackets.</p>
         <div className="bg-white border border-slate-100 rounded-3xl shadow-sm overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-4 bg-slate-900 text-white font-extrabold text-xs uppercase tracking-widest py-4 px-6 gap-4 text-center md:text-left">
@@ -195,7 +195,7 @@ export default function EducationPage() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 mb-24 bg-gradient-to-b from-purple-500/5 to-indigo-500/5 p-8 sm:p-12 rounded-[32px] border border-slate-100">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
           <Trophy className="w-12 h-12 text-accent mx-auto fill-accent animate-pulse" />
-          <h2 className="text-3xl font-extrabold text-primary font-serif">Academy Toppers</h2>
+          <h2 className="text-3xl font-extrabold text-primary">Academy Toppers</h2>
           <p className="text-slate-500 font-semibold">Honoring the exceptional achievements of our students in national examinations.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -212,7 +212,7 @@ export default function EducationPage() {
 
       {/* Elite Coaching Programs catalog */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 mb-24">
-        <h2 className="text-3xl font-extrabold text-primary mb-4 font-serif">Curated Learning Tracks</h2>
+        <h2 className="text-3xl font-extrabold text-primary mb-4">Curated Learning Tracks</h2>
         <p className="text-slate-500 font-semibold mb-12">Adhering to certified benchmarks and national exams frameworks.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {programs.map((pkg, i) => (
@@ -236,7 +236,7 @@ export default function EducationPage() {
           
           <div className="space-y-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-rose-50 text-rose-600 text-xs font-bold uppercase tracking-wider">Admissions Open 2026-27</div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary leading-tight">
               Begin Your Ward's Learning Journey
             </h2>
             <p className="text-slate-500 font-semibold leading-relaxed">
