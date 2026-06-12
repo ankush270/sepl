@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Plane, Fuel, Compass, ShieldCheck, Trophy, Sparkles, CheckCircle2 } from 'lucide-react';
 
 export default function LifestylePage() {

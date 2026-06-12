@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { 
   HeartPulse, Pill, Stethoscope, Calendar, Clock, 
   User, CheckCircle2, ShieldCheck, Heart, PhoneCall, 
-  FileText, Activity, Users, ShieldAlert, Award
+  Activity
 } from 'lucide-react';
 
 export default function HealthcarePage() {
@@ -98,7 +98,7 @@ export default function HealthcarePage() {
         <h2 className="text-3xl font-extrabold text-primary mb-4">Clinical Departments & Timings</h2>
         <p className="text-slate-500 font-semibold mb-12">Consult with certified general practitioners and senior medical specialists daily.</p>
         <div className="bg-white border border-slate-100 rounded-3xl shadow-sm overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-4 bg-slate-900 text-white font-extrabold text-xs uppercase tracking-widest py-4 px-6 gap-4 text-center md:text-left">
+          <div className="hidden md:grid grid-cols-4 bg-slate-900 text-white font-extrabold text-xs uppercase tracking-widest py-4 px-6 gap-4 text-left">
             <div>Medical Specialty</div>
             <div>Senior Consultant In Charge</div>
             <div>Consulting Timings</div>
@@ -106,17 +106,23 @@ export default function HealthcarePage() {
           </div>
           <div className="divide-y divide-slate-100">
             {departments.map((d, i) => (
-              <div key={i} className="grid grid-cols-1 md:grid-cols-4 font-bold py-5 px-6 gap-4 items-center text-center md:text-left hover:bg-slate-50 transition-colors">
-                <div className="text-indigo-600 flex items-center justify-center md:justify-start gap-2 text-sm">
-                  <Activity className="w-4 h-4 text-slate-400" />
+              <div key={i} className="grid grid-cols-1 md:grid-cols-4 font-bold py-5 px-6 gap-4 items-start md:items-center text-left hover:bg-slate-50 transition-colors">
+                <div className="text-indigo-600 flex items-center justify-start gap-2 text-sm">
+                  <Activity className="w-4.5 h-4.5 text-slate-400 flex-shrink-0" />
+                  <span className="md:hidden text-slate-400 font-extrabold text-xs uppercase mr-1.5 flex-shrink-0">Specialty:</span>
                   {d.name}
                 </div>
-                <div className="text-primary text-[15px]">{d.doctor}</div>
-                <div className="text-slate-500 text-xs flex items-center justify-center md:justify-start gap-2 font-semibold">
-                  <Clock className="w-4 h-4 text-slate-400" />
+                <div className="text-primary text-[15px] flex items-center justify-start gap-2">
+                  <span className="md:hidden text-slate-400 font-extrabold text-xs uppercase mr-1.5 flex-shrink-0">Consultant:</span>
+                  {d.doctor}
+                </div>
+                <div className="text-slate-500 text-xs flex items-center justify-start gap-2 font-semibold">
+                  <Clock className="w-4 h-4 text-slate-400 flex-shrink-0" />
+                  <span className="md:hidden text-slate-400 font-extrabold text-xs uppercase mr-1.5 flex-shrink-0">Timings:</span>
                   {d.hours}
                 </div>
-                <div>
+                <div className="flex items-center justify-start gap-2">
+                  <span className="md:hidden text-slate-400 font-extrabold text-xs uppercase mr-1.5 flex-shrink-0">Status:</span>
                   <span className={`inline-block text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider ${d.status === 'Active' ? 'bg-emerald-50 text-emerald-700 border border-emerald-100' : 'bg-amber-50 text-amber-700 border border-amber-100'}`}>
                     {d.status}
                   </span>
@@ -193,7 +199,7 @@ export default function HealthcarePage() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 mb-24">
         <h2 className="text-3xl font-extrabold text-primary mb-4">Preventive Diagnostics Packages</h2>
         <p className="text-slate-500 font-semibold mb-12">Fully NABL and ISO compliant clinical health profiles.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {labPackages.map((pkg, i) => (
             <div key={i} className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow relative">
               <div className="text-3xl font-extrabold text-indigo-600 mb-2">{pkg.price}</div>

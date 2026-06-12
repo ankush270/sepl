@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bell, User, Menu, X, ChevronDown } from 'lucide-react';
 
@@ -69,6 +69,7 @@ export default function Header() {
           {/* Action Icons & CTAs */}
           <div className="hidden md:flex items-center gap-4">
 
+
             {/* Get Started Button */}
             <Link
               to="/contact"
@@ -96,7 +97,7 @@ export default function Header() {
 
       {/* Mobile Navigation Drawer */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glassmorphism border-b border-slate-200 animate-in slide-in-from-top duration-300">
+        <div className="lg:hidden glassmorphism border-b border-slate-200 animate-in slide-in-from-top duration-300">
           <div className="px-4 pt-2 pb-6 space-y-1.5">
             {navLinks.map((link) => (
               <Link

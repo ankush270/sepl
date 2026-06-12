@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export default function Founder() {
   return (
@@ -11,7 +11,7 @@ export default function Founder() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
           
           {/* Left Column: Portrait & Title Badge */}
-          <div className="lg:col-span-5 flex flex-col items-center justify-center relative">
+          <div className="lg:col-span-5 flex flex-col items-center justify-center relative mb-16 lg:mb-0">
             
             {/* Background design elements */}
             <div className="absolute inset-0 bg-slate-100 rounded-[36px] -rotate-3 scale-[1.02] -z-10 pointer-events-none" />

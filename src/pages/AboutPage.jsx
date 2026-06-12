@@ -1,5 +1,4 @@
-import React from 'react';
-import { Target, Eye, ShieldAlert, Award, ShieldCheck, Heart } from 'lucide-react';
+import { Target, Eye, Award, ShieldCheck } from 'lucide-react';
 import Founder from '../components/Founder';
 
 export default function AboutPage() {
