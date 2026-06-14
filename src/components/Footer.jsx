@@ -135,11 +135,10 @@ export default function Footer() {
               Services
             </h4>
             <ul className="space-y-3 text-sm font-semibold">
-              <li><Link to="/services#healthcare" className="hover:text-white transition-colors">Healthcare & Diagnostics</Link></li>
-              <li><Link to="/services#education" className="hover:text-white transition-colors">Progressive Education</Link></li>
-              <li><Link to="/services#business" className="hover:text-white transition-colors">Business & Logistics</Link></li>
-              <li><Link to="/services#lifestyle" className="hover:text-white transition-colors">Lifestyle & Hospitality</Link></li>
-              <li><Link to="/services#realestate" className="hover:text-white transition-colors">Real Estate & Properties</Link></li>
+              <li><Link to="/services#healthcare" className="hover:text-white transition-colors">Healthcare Services</Link></li>
+              <li><Link to="/services#education" className="hover:text-white transition-colors">Education & Academies</Link></li>
+              <li><Link to="/services#business" className="hover:text-white transition-colors">Business & Lifestyle</Link></li>
+              <li><Link to="/services#logistics-lifestyle" className="hover:text-white transition-colors">Logistics & Fuels</Link></li>
             </ul>
           </div>
  

@@ -21,13 +21,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
+          {/* <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center gap-1.5 group">
               <span className="font-sans font-extrabold text-2xl tracking-tight text-primary">
                 SEPL<span className="text-accent">.CO</span>
               </span>
             </Link>
-          </div>
+          </div> */}
+          <img src="logo.png" alt="logo" width={150} height={150}/>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex space-x-1 xl:space-x-4 items-center">
